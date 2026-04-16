@@ -17,7 +17,7 @@ llm = HuggingFacePipeline.from_model_id(
 model = ChatHuggingFace(llm=llm)
 
 
-st.header("Research tool")
+st.header("Research tool")  
 user_input = st.text_input("Enter your prompt")
 if st.button("Summarize"):
     result = model.invoke(user_input)
